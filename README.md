@@ -4,12 +4,9 @@
 [![PyTorch Deep Learning](https://img.shields.io/badge/PyTorch-2.3+-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org)
 [![CUDA Accelerator](https://img.shields.io/badge/CUDA-12.2+-76B900?style=for-the-badge&logo=nvidia&logoColor=white)](https://developer.nvidia.com/cuda-zone)
 [![FastAPI Inference](https://img.shields.io/badge/FastAPI-0.111+-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
-[![Deploy with Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/new)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-An open-source, production-grade deep learning research engine implementing **8-Bit Quantization-Aware Training (QAT)**, **Rotary Position Embeddings (RoPE)**, **FlashAttention-v3 KV-Cache Optimization**, and **Ring-AllReduce Distributed Gradient Accumulation**. 
-
-Designed for low-memory GPU training, real-time transformer inference, and serverless edge deployment on Vercel.
+An open-source, production-grade deep learning research engine implementing **8-Bit Quantization-Aware Training (QAT)**, **Rotary Position Embeddings (RoPE)**, **FlashAttention-v3 KV-Cache Optimization**, and **Ring-AllReduce Distributed Gradient Accumulation**.
 
 ---
 
@@ -58,7 +55,7 @@ distributed-transformer-quantization-engine/
 ├── public/
 │   └── index.html             # Glassmorphism Tensor Heatmap & Analytics Dashboard
 ├── requirements.txt           # Production Python dependencies
-├── vercel.json                # Serverless Vercel deployment pipeline
+├── vercel.json                # Serverless deployment configuration
 └── README.md                  # Main research paper documentation & arXiv Badges
 ```
 
@@ -89,14 +86,6 @@ python3 engine/benchmarks.py
 uvicorn api.server:app --reload --port 8000
 ```
 Access the interactive OpenAPI Swagger UI at `http://localhost:8000/docs`.
-
----
-
-## 🌐 Deploy to Vercel
-
-Deploy the interactive Tensor Attention Heatmap Dashboard & Serverless API directly to Vercel:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fzeeshan-ux-AI%2Fdistributed-transformer-quantization-engine)
 
 ---
 
